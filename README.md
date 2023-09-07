@@ -30,7 +30,7 @@ Disnet, é uma ferramenta que permite extrair informações importantes de uma c
 
  - `cd Disnet`
    
- - `bash install.sh`
+ - `bash install.sh` ou use - `pip install -r requirements`
 
 ## 💉 Iniciar
 Use o comando ↓
