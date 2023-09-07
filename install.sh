@@ -28,10 +28,6 @@ echo "
 }
 banner
 echo -e "\n[${v1}+${b}] Instalando pacotes...\n"
-pkg install python
-pkg install python2
-pkg install python3
-pip install --upgrade pip
 pip install pystyle
 echo -e "\n[${v1}+${b}] Pacotes instalados com sucesso !\nUse ${r}python3 Disnet.py${b} caso queira executar o programa novamente."
 sleep 4
