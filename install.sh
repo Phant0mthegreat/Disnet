@@ -28,6 +28,7 @@ echo "
 }
 banner
 echo -e "\n[${v1}+${b}] Instalando pacotes...\n"
+pip install requests
 pip install rich
 pip install pystyle
 echo -e "\n[${v1}+${b}] Pacotes instalados com sucesso !\nUse ${r}python3 Disnet.py${b} caso queira executar o programa novamente."
