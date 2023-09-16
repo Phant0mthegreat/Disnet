@@ -157,7 +157,7 @@ def CT():
 
 [red]Email :[white] {email}
 
-[red]Número de telefone:[white] {phone if phone else ""}
+[red]Número de telefone :[white] {phone if phone else ""}
 
 ''', title='🔥'))
          input('\n[ENTER] para voltar ao menu.')
