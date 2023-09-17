@@ -122,6 +122,24 @@ def CT():
            avatar_url='Sem foto de perfil (ícone padrão do Discord)'
          if badges==None or badges=='':
            badges='Sem flags'
+         def server_account(token):
+           headers = {'Authorization': token, 'Content-Type': 'application/json'}
+           response = requests.get('https://discord.com/api/v10/users/@me/guilds', headers=headers)
+           if response.status_code == 200:
+             servers = response.json()
+             return len(servers)
+           else:
+              return 0
+         def friend_account(token):
+            headers = {'Authorization': token, 'Content-Type': 'application/json'}
+            response = requests.get('https://discord.com/api/v10/users/@me/relationships', headers=headers)
+            if response.status_code == 200:
+                friends = response.json()
+                return len(friends)
+            else:
+                return 0
+         serves = server_account(token)
+         friends = friend_account(token)
          console.print(Panel.fit(f'''
   <<───────────Info básicas 🧾───────────>>
 
@@ -138,6 +156,10 @@ def CT():
 [red]Língua :[white] {locale} ({pl})
 
 [red]Cor do banner :[white] {'(HEX) '+str(accent_color) if accent_color else "Automático"}
+
+[red]Amigos :[white] {friends}
+
+[red]Servidores que o usuário participa :[white] {serves}
 
   <<──────────────Nitro 🚀──────────────>>
 
