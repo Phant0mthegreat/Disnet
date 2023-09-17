@@ -13,7 +13,7 @@ try:
   os.system('clear')
   print(Colorate.Vertical(Colors.red_to_yellow, banners.banner1))
   print(Colorate.Vertical(Colors.red_to_yellow, '\n=> [C] Criado pôr: Phant0m The Great'))
-  print(Colorate.Vertical(Colors.red_to_yellow, '=> [V] v3.6\n'))
+  print(Colorate.Vertical(Colors.red_to_yellow, '=> [V] v4.0\n'))
   console.print(Panel.fit("""[red][01] [white]Consultar Token\n\n[red][02] [white]Bug Report\n\n[red][03] [white]Sair""", padding=(1,13), title="[bold yellow]Disnet"))
   m=input(f'{c.bred}[>>]: {c.white}')
   if m=='1' or m=='01':
