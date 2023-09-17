@@ -17,6 +17,8 @@ Disnet, é uma ferramenta que permite extrair informações importantes de uma c
 - [x] Se o email é verificado pelo discord
 - [x] Cor do banner do perfil em hexadecima
 - [x] Flags
+- [x] Quantidade de amigos
+- [x] Quantidade de servidores que participara
 
  
 ## 🧪 Testado em...
