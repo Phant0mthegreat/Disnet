@@ -1,6 +1,6 @@
 <p align="center">
 
-  <img width="200" height="200" src="IMG-20230906-WA0008.jpg">
+  <img width="200" height="200" src="IMG-20230917-WA0042.jpg">
   
 # Disnet 💉🔥
 Disnet, é uma ferramenta que permite extrair informações importantes de uma conta do discord pôr meio do token, isso inclui ↓
@@ -37,7 +37,7 @@ Use o comando ↓
  - `python3 Disnet.py`
 para iniciar o programa quando quiser
 
-## 🗃️ Versão Atual: 3.6
+## 🗃️ Versão Atual: 4.0
 1.0 = 17/07/2023
 
 1.5 = 25/07/2023
@@ -53,6 +53,8 @@ para iniciar o programa quando quiser
 3.5 = 04/09/2023
 
 3.6 = 06/09/2023
+
+4.0 = 17/09/2023
 
 ## 📜 Nota
 Para que a instalação funcione, é preciso ter o "git", a línguagem python e o "pip" instalados.
