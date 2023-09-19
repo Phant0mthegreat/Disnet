@@ -183,3 +183,40 @@ def CT():
 
 ''', title='🔥'))
          input('\n[ENTER] para voltar ao menu.')
+def MS(token, server_id, channel_id, message):
+    head = {'Authorization': str(token)}
+    src = requests.get('https://discordapp.com/api/v6/users/@me', headers=head)
+    if src.status_code != 200:
+      print(f'\n{c.bred}[ ! ] Oh não ! esse token é inválido ;({c.white}')
+      input('\n[ENTER] para voltar ao menu.')
+    else:
+      headers = {
+        'Authorization': token,
+        'Content-Type': 'application/json'
+    }
+    
+      payload = {
+        'content': message
+    }
+
+      server_url = f'https://discord.com/api/v10/guilds/{server_id}'
+      channel_url = f'https://discord.com/api/v10/channels/{channel_id}'
+    
+      url = f'https://discord.com/api/v10/channels/{channel_id}/messages'
+
+      server_response = requests.get(server_url, headers=headers)
+      if server_response.status_code != 200:
+        print(f'\n{c.bred}[ ! ] O servidor {server_id} não existe ou você não tem acesso !{c.white}')
+        return
+    
+      channel_response = requests.get(channel_url, headers=headers)
+      if channel_response.status_code != 200:
+        print(f'\n{c.bred}[ ! ] O canal {channel_id} não existe ou você não tem acesso !{c.white}')
+       
+      response = requests.post(url, headers=headers, json=payload)
+    
+      if response.status_code == 200:
+          print(f'\n{c.bgreen}[ ! ] A mensagem foi enviada com sucesso em {server_id}#{channel_id}{c.white}')
+      else:
+        print(f'\n{c.bred}[ ! ] Erro ao enviar mensagem.\nPossíveis causas\n\n• status 400\n• Você não tem permissão para enviar mensagem no canal.')
+      input('\n[ENTER] para voltar ao menu.')
