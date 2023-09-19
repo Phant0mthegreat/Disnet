@@ -20,7 +20,7 @@ Disnet, é uma ferramenta que permite extrair informações importantes de uma c
 - [x] Quantidade de amigos
 - [x] Quantidade de servidores que participara
 
- 
+Também é possível enviar mensagens para servidores 
 ## 🧪 Testado em...
  > - - [ ] **KALI** 
 
@@ -39,7 +39,7 @@ Use o comando ↓
  - `python3 Disnet.py`
 para iniciar o programa quando quiser
 
-## 🗃️ Versão Atual: 4.0
+## 🗃️ Versão Atual: 5.0
 1.0 = 17/07/2023
 
 1.5 = 25/07/2023
@@ -57,6 +57,8 @@ para iniciar o programa quando quiser
 3.6 = 06/09/2023
 
 4.0 = 17/09/2023
+
+5.0 = 19/09/2023
 
 ## 📜 Nota
 Para que a instalação funcione, é preciso ter o "git", a línguagem python e o "pip" instalados.
