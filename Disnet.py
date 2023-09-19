@@ -31,7 +31,7 @@ try:
       channel_id=input(f'[{c.red}>{c.white}] Id do canal: ')
       message=input(f'[{c.red}>{c.white}] Mensagem: ')
     
-      util.send_message_to_channel(token, server_id, channel_id, message)
+      util.MS(token, server_id, channel_id, message)
     
   elif user_response=='3' or user_response=='03':
     os.system('clear')
