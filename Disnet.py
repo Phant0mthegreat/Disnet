@@ -23,7 +23,7 @@ try:
       print(f'\n{c.bred}[ ! ] Oh não ! não foi possível fazer a conexão, tente novamente mais tarde.{c.white}')
       sys.exit()
   elif user_response=='2' or user_response=='02':
-    
+    try:
       os.system('clear')
       print(Colorate.Vertical(Colors.red_to_yellow, banners.banner2))
       token=input(f'\n[{c.red}>{c.white}] Token: ')
@@ -32,7 +32,9 @@ try:
       message=input(f'[{c.red}>{c.white}] Mensagem: ')
     
       util.MS(token, server_id, channel_id, message)
-    
+    except:
+      print(f'\n{c.bred}[ ! ] Oh não ! não foi possível fazer a conexão, tente novamente mais tarde.{c.white}')
+      sys.exit()
   elif user_response=='3' or user_response=='03':
     os.system('clear')
     print(Colorate.Vertical(Colors.red_to_yellow, banners.banner1))
