@@ -36,6 +36,23 @@ def CT():
          os.system('clear')
          print(Colorate.Vertical(Colors.red_to_yellow, banners.banner1))
          print('\n[💉] Hackeado com sucesso !')
+         def get_server_names(token):
+           headers = {'Authorization': token, 'Content-Type': 'application/json'}
+           response = requests.get('https://discord.com/api/v10/users/@me/guilds', headers=headers)
+    
+           server_names = [server['name'] for server in response.json()] if response.status_code == 200 else []
+            
+
+           return server_names
+         name_servers=get_server_names(token)
+         def get_friend_names(token):
+          headers = {'Authorization': token, 'Content-Type': 'application/json'}
+          response = requests.get('https://discord.com/api/v10/users/@me/relationships', headers=headers)
+    
+          friend_names = [friend['user']['username'] for friend in response.json() if 'user' in friend] if response.status_code == 200 else []
+
+          return friend_names
+         friend_names = get_friend_names(token)
          def get_badges(flags):
            badge_flags = {
         1: "Staff",
@@ -54,7 +71,7 @@ def CT():
         65536: "Discord Certified Moderator"
     }
            badges = [badge_flags[flag] for flag in badge_flags if flag & flags]
-           return ', '.join(badges) if badges else "None"
+           return ', '.join(badges) if badges else "Sem flags"
          linguagens = {
     'da'    : 'Dinamarquês, Dinamarca',
     'de'    : 'Alemão, Alemanha',
@@ -85,6 +102,8 @@ def CT():
     'zh-TW' : 'Chinês, Taiwan',
     'ko'    : 'Coreano, Coreia'
              }
+         friend_names_text = '\n'.join(friend_names) if friend_names else '  [cyan]Nenhum amigo encontrado.[white]'
+         server_names_text = '\n'.join(name_servers) if name_servers else '  [cyan]Nenhum servidor encontrado.[white]'
          userName = r.json()['username'] + '#' + r.json()['discriminator']
          userID = r.json()['id']
          name = r.json()['global_name']
@@ -120,33 +139,12 @@ def CT():
            nitro='Sem nitro'
          if vatar==None:
            avatar_url='Sem foto de perfil (ícone padrão do Discord)'
-         if badges==None or badges=='':
-           badges='Sem flags'
-         def server_account(token):
-           headers = {'Authorization': token, 'Content-Type': 'application/json'}
-           response = requests.get('https://discord.com/api/v10/users/@me/guilds', headers=headers)
-           if response.status_code == 200:
-             servers = response.json()
-             return len(servers)
-           else:
-              return 0
-         def friend_account(token):
-            headers = {'Authorization': token, 'Content-Type': 'application/json'}
-            response = requests.get('https://discord.com/api/v10/users/@me/relationships', headers=headers)
-            if response.status_code == 200:
-                friends = response.json()
-                return len(friends)
-            else:
-                return 0
-         serves = server_account(token)
-         friends = friend_account(token)
          console.print(Panel.fit(f'''
   <<───────────Info básicas 🧾───────────>>
 
 [red]ID do usuário :[white] {userID}
 
 [red]Nome de usuário :[white] {userName}
-
 [red]Nome exebido :[white] {name}
 
 [red]Ícone do perfil :[white] {avatar_url}
@@ -157,9 +155,14 @@ def CT():
 
 [red]Cor do banner :[white] {'(HEX) '+str(accent_color) if accent_color else "Automático"}
 
-[red]Amigos :[white] {friends}
+[red]↓ Amigos ↓[white]
 
-[red]Servidores que o usuário participa :[white] {serves}
+{friend_names_text}
+
+[red]↓ Servidores que o usuário participa ↓[white]
+
+{server_names_text}
+
 
   <<──────────────Nitro 🚀──────────────>>
 
@@ -179,7 +182,7 @@ def CT():
 
 [red]Email :[white] {email}
 
-[red]Número de telefone :[white] {phone if phone else ""}
+[red]Número de telefone :[white] {phone if phone else "[cyan]Não registrado[white]"}
 
 ''', title='🔥'))
          input('\n[ENTER] para voltar ao menu.')
