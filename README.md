@@ -1,6 +1,6 @@
 <p align="center">
 
-  <img width="200" height="200" src="IMG-20230924-WA0005.jpg">
+  <img width="300" height="300" src="IMG-20230924-WA0005.jpg">
   
 # Disnet 💉🔥
 Disnet, é uma ferramenta que permite extrair informações importantes de uma conta do discord pôr meio do token, isso inclui ↓
