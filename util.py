@@ -13,7 +13,7 @@ def inter():
   time.sleep(4)
   try:
         requests.get(url, timeout=timeout)
-  except ConnectionError:
+  except:
         print(f'\nNão foi possível se conectar ao {c.red}Disnet{c.white}.\nTente novamente mais tarde.')
         sys.exit()
   else:
