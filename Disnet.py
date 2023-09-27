@@ -7,6 +7,9 @@ console = Console()
 try:
  util.inter()
  print(banners.banner0)
+ print('')
+ banners.text()
+ print('\n')
  banners.Carreg()
  os.system('clear')
  while True:
@@ -47,3 +50,4 @@ try:
     sys.exit()
 except KeyboardInterrupt:
   print('\n[#] O programa foi interrompido.')
+     
