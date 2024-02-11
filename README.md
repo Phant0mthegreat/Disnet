@@ -24,13 +24,13 @@ Disnet, é uma ferramenta que permite extrair informações importantes de uma c
 
 Também é possível enviar mensagens para servidores 
 ## 🧪 Testado em...
- > - - [ ] **KALI** 
+ > - - [x] **KALI** 
 
  > - - [x] **TERMUX**
 
-## 🔧 Instalação no Termux
+## 🔧 Instalação
 
- - `git clone github.com/Phant0mthegreat/Disnet`
+ - `git clone https://github.com/Phant0mthegreat/Disnet`
 
  - `cd Disnet`
    
