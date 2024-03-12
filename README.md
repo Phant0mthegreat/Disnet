@@ -29,16 +29,20 @@ Também é possível enviar mensagens para servidores
  > - - [x] **TERMUX**
 
 ## 🔧 Instalação
-
- - `git clone https://github.com/Phant0mthegreat/Disnet`
-
- - `cd Disnet`
-   
- - `bash install.sh` ou use `pip install -r requirements.txt`
-
+```
+git clone https://github.com/Phant0mthegreat/Disnet
+```
+```
+cd Disnet
+```
+```
+bash install.sh
+```
 ## 💉 Iniciar
 Use o comando ↓
- - `python3 Disnet.py`
+```
+python3 Disnet.py
+```
 para iniciar o programa quando quiser
 
 ## 🗃️ Versão Atual: 6.1
@@ -66,5 +70,6 @@ para iniciar o programa quando quiser
 
 6.1 = 27/09/2023
 
-## 📜 Nota
-Para que a instalação funcione, é preciso ter o "git", a línguagem python e o "pip" instalados.
+> [!NOTE]
+> 📩
+> Para que a instalação funcione, é preciso ter o "git", a línguagem python e o "pip" instalados.
