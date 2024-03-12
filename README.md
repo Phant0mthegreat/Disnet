@@ -29,6 +29,11 @@ Também é possível enviar mensagens para servidores
  > - - [x] **TERMUX**
 
 ## 🔧 Instalação
+> [!NOTE]
+> 📩
+> Para que a instalação funcione, é preciso ter o "git", a línguagem python e o "pip" instalados.
+
+Para instalar o Disnet, execute ↓
 ```
 git clone https://github.com/Phant0mthegreat/Disnet
 ```
@@ -69,7 +74,3 @@ para iniciar o programa quando quiser
 6.0 = 24/09/2023
 
 6.1 = 27/09/2023
-
-> [!NOTE]
-> 📩
-> Para que a instalação funcione, é preciso ter o "git", a línguagem python e o "pip" instalados.
