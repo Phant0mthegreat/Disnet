@@ -29,7 +29,7 @@ Também é possível enviar mensagens para servidores
  > - - [x] **TERMUX**
 
 ## 🔧 Instalação
-> [!NOTE]
+> [!IMPORTANT]
 > 📩
 > Para que a instalação funcione, é preciso ter o "git", a línguagem python e o "pip" instalados.
 
