@@ -3,26 +3,28 @@
   <img width="300" height="300" src="IMG-20230927-WA0009.jpg">
   
 # Disnet 💉🔥
-Disnet, é uma ferramenta que permite extrair informações importantes de uma conta do discord pôr meio do token, isso inclui ↓
-- [x] Número de telefone
-- [x] Email
-- [x] Nome de Usuário
-- [x] Nome de exibição
-- [x] Ícone de perfil
-- [x] ID do usuário
-- [x] Se tem Nitro
-- [x] Verificação de duas etapas
-- [x] Data de criação da conta
-- [x] Linguagem
-- [x] Se o email é verificado pelo discord
-- [x] Cor do banner do perfil em hexadecima
-- [x] Flags
-- [x] Username dos amigos
-- [x] Nome dos servidores que participa
-- [x] Quantidade de amigos
-- [x] Quantidade de servidores que participara
+Disnet, é uma ferramenta que permite extrair informações importantes de uma conta do discord pôr meio do token, mostrando ↓
+|   Informação    |  Status |
+|:-----------:|:-------:|
+| Número de telefone | ✔️ |
+| Email | ✔️ |
+| Nome de Usuário | ✔️ |
+| Nome de exibição | ✔️  |
+| Ícone de perfil | ✔️ |
+| ID do usuário | ✔️ |
+| Se tem Nitro | ✔️ |
+| Verificação de duas etapas | ✔️ |
+| Data de criação da conta | ✔️ |
+| Linguagem | ✔️ |
+| Se o email é verificado pelo discord | ✔️ |
+| Cor do banner do perfil em hexadecima | ✔️ |
+| Flags | ✔️ |
+| Username dos amigos | ✔️ |
+| Nome dos servidores que participa | ✔️ |
+| Quantidade de amigos | ✔️ |
+| Quantidade de servidores que participara | ✔️ |
 
-Também é possível enviar mensagens para servidores 
+Também é possível enviar mensagens para servidores, tendo em mente o ID do servidor e do chat para o qual você deseja enviar a mensagem.
 ## 🧪 Testado em...
  > - - [x] **KALI** 
 
