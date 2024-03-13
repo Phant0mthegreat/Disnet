@@ -12,7 +12,7 @@ Disnet é uma ferramenta de código aberto que permite extrair informações imp
 | Nome de exibição | ✔️  |
 | Ícone de perfil | ✔️ |
 | ID do usuário | ✔️ |
-| Se tem Nitro | ✔️ |
+| Nitro | ✔️ |
 | Verificação de duas etapas | ✔️ |
 | Data de criação da conta | ✔️ |
 | Linguagem | ✔️ |
@@ -22,7 +22,7 @@ Disnet é uma ferramenta de código aberto que permite extrair informações imp
 | Username dos amigos | ✔️ |
 | Nome dos servidores que participa | ✔️ |
 | Quantidade de amigos | ✔️ |
-| Quantidade de servidores que participara | ✔️ |
+| Quantidade de servidores que participa | ✔️ |
 
 Também é possível enviar mensagens para servidores, tendo em mente o ID do servidor e do chat para o qual você deseja enviar a mensagem.
 ## 🧪 Testado em...
