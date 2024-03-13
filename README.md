@@ -3,7 +3,7 @@
   <img width="300" height="300" src="IMG-20230927-WA0009.jpg">
   
 # Disnet 💉🔥
-Disnet, é uma ferramenta que permite extrair informações importantes de uma conta do discord pôr meio do token, mostrando ↓
+Disnet, é uma ferramenta open source que permite extrair informações importantes de uma conta do discord pôr meio do token, mostrando ↓
 |   Informação    |  Status |
 |:-----------:|:-------:|
 | Número de telefone | ✔️ |
