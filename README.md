@@ -26,9 +26,9 @@ Disnet, é uma ferramenta que permite extrair informações importantes de uma c
 
 Também é possível enviar mensagens para servidores, tendo em mente o ID do servidor e do chat para o qual você deseja enviar a mensagem.
 ## 🧪 Testado em...
- > - - [x] **KALI** 
+ - [x] **KALI** 
 
- > - - [x] **TERMUX**
+ - [x] **TERMUX**
 
 ## 🔧 Instalação no Kali e Termux
 > [!IMPORTANT]
