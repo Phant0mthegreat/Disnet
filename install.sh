@@ -31,7 +31,7 @@ echo -e "\n[${A}+${b}] Intalando pacotes...\n"
 if pip install requests && pip install rich && pip install pystyle ; then
   echo -e "\n[${v1}+${b}] Boas notícias, os pacotes foram instalados com sucesso"
   sleep 2
-  echo -e "\nO Disnet vai começar automaticamente em alguns segundos, caso queira iniciá-lo novamente, basta entrar no repositório do Disnet e digitar ${r}python Disnet.py${b}"
+  echo -e "\nO Disnet vai começar automaticamente em alguns segundos, caso queira iniciá-lo novamente, basta entrar no repositório do Disnet e digitar ${r}python3 Disnet.py${b}"
   sleep 3
   echo -e "\nIniciando em...\n"
   sleep 1
@@ -46,7 +46,7 @@ if pip install requests && pip install rich && pip install pystyle ; then
   echo "1"
   sleep 1
   clear
-  python Disnet.py
+  python3 Disnet.py
 else
   echo "[${r}+${b}] Más notícias, não foi possível instalar os pacotes em sua máquina, tente novamente mais tarde."
 fi
