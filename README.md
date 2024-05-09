@@ -26,7 +26,7 @@ Disnet é uma ferramenta de código aberto que permite extrair informações imp
 
 Também é possível enviar mensagens para servidores, tendo em mente o ID do servidor e do chat para o qual você deseja enviar a mensagem.
 ## 🧪 Testado em...
- - [x] **KALI** 
+ - [x] **KALI LINUX** 
 
  - [x] **TERMUX**
 
