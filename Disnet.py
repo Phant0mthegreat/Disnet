@@ -41,7 +41,7 @@ try:
   elif user_response=='3' or user_response=='03':
     os.system('clear')
     print(Colorate.Vertical(Colors.red_to_yellow, banners.banner1))
-    print(f'\n[§] Caso tenha encontrado algum bug na ferramenta, entre em contato com o criador para reportar o bug. Discord ↓\n\n[ {c.bblue}D{c.white} ] @phant0mthegreat')
+    print(f'\n[§] Caso tenha encontrado algum bug na ferramenta, entre em contato com o criador para reportar o bug. Discord ↓\n\n[ {c.bblue}D{c.white} ] @phant0mthegreat.')
     input('\n[ENTER] para voltar ao menu.')
   elif user_response=='4' or user_response=='04':  
     os.system('clear')
